@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    long int n, a;
+    while (cin >> n)
+    {
+        if (n >= 0 && n <= 210000000)
+        {
+            a = ((n * (n + 1)) / 2) + 1;
+            cout << a << endl;
+        }
+        else if (n < 0)
+            break;
+    }
+    return 0;
+}
