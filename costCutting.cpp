@@ -8,36 +8,12 @@ int main()
     {
         int a, b, c;
         cin >> a >> b >> c;
-        if (a > b)
-        {
-            if (a < c)
-            {
-                cout << "Case " << i + 1 << ": " << a << endl;
-            }
-            else if (b > c)
-            {
-                cout << "Case " << i + 1 << ": " << b << endl;
-            }
-            else
-            {
-                cout << "Case " << i + 1 << ": " << c << endl;
-            }
-        }
+        if (a > b && a < c || a < b && a > c)
+            cout << "Case " << i + 1 << ": " << a << endl;
+        else if (b > a && b < c || b < a && b > c)
+            cout << "Case " << i + 1 << ": " << b << endl;
         else
-        {
-            if (a > c)
-            {
-                cout << "Case " << i + 1 << ": " << a << endl;
-            }
-            else if (b < c)
-            {
-                cout << "Case " << i + 1 << ": " << b << endl;
-            }
-            else
-            {
-                cout << "Case " << i + 1 << ": " << c << endl;
-            }
-        }
+            cout << "Case " << i + 1 << ": " << c << endl;
     }
 
     return 0;
