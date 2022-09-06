@@ -8,7 +8,7 @@ int main()
     for (int i = 0; i < t; i++)
     {
         int currentDay, currentMonth, currentYear, birthDay, birthMonth, birthYear;
-        char c;
+        char c; // why do we need this? because we need to read the / character from the input stream and we don't need to store it anywhere so we just store it in a variable that we don't use anywhere else in the program.
         cin >> currentDay >> c >> currentMonth >> c >> currentYear;
         cin >> birthDay >> c >> birthMonth >> c >> birthYear;
         // calculate the age by subtracting the current year from the birth year
